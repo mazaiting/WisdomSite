@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">智慧工地</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!--WelcomeActivity-->
+    <string name="count_timer">跳过 %ds</string>
+    <string name="welcome_content">智慧工地</string>
+    <string name="login_auto_login">自动登录</string>
+    <string name="login_department">监管部门</string>
+    <string name="login_btn_login">登 录</string>
+    <string name="login_et_password">密码</string>
+    <string name="login_et_username">Email / 用户名</string>
+
+    <!--AttendDayActivity-->
+    <!--<string name="tv_attend_day">\t\t应到 %d人,实到 %d人,到勤率 %.2f%%,缺勤率 %.2f%%.</string>-->
+    <string name="tv_attend_day">\t\t应到 %1$d人,实到 %2$d人,到勤率 %3$.2f%%,缺勤率 %4$.2f%%.</string>
+    <string name="tv_attend_month">\t\t满勤 %1$d天,缺勤 %2$d天s,到勤率 %3$.2f%%,缺勤率 %4$.2f%%.</string>
+
+    <!--Toolbar 标题-->
+    <string name="tool_bar_attend">考勤管理</string>
+    <string name="tool_bar_attend_day">当日考勤</string>
+    <string name="tool_bar_attend_month">当月考勤</string>
+    <string name="tool_bar_attend_query">查询考勤</string>
+    <string name="tool_bar_equip">设备管理</string>
+    <string name="tool_bar_employee">人员管理</string>
+    <string name="tool_bar_employee_info">详细信息</string>
+    <string name="tool_bar_employee_track">人员轨迹</string>
+
+</resources>

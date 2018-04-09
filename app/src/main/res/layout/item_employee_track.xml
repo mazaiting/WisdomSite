@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@id/item_iv_head_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:id="@id/item_tv_build_floor"
+        android:text="楼号 / 楼层"
+        android:textSize="@dimen/sp_16"
+        android:layout_toEndOf="@id/item_iv_head_img"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:textColor="@color/md_grey_800"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@id/item_tv_equip_name"
+        android:text="记录设备名称"
+        android:textSize="@dimen/sp_14"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_toEndOf="@id/item_iv_head_img"
+        android:textColor="@color/black_overlay"
+        android:layout_below="@id/item_tv_build_floor"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@id/item_tv_entry_time"
+        android:text="记录时间"
+        android:textSize="@dimen/sp_14"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:textColor="@color/black_overlay"
+        android:layout_below="@id/item_tv_build_floor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

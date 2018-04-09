@@ -1,0 +1,35 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_welcome"
+    tools:context="com.mazaiting.site.module.welcome.WelcomeActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top|center"
+        android:keepScreenOn="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/welcome_content"
+        android:textColor="#33b5e5"
+        android:textSize="40sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@id/welcome_tv_time"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="@dimen/sp_12"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:textColor="@android:color/darker_gray"
+        android:textAllCaps="false"
+        android:background="@drawable/tv_count_timer_bg"
+        android:layout_width="60dp"
+        android:layout_height="30dp"/>
+
+</FrameLayout>

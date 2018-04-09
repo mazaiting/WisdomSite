@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_person_manage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mazaiting.site.module.manage.employee.info.EmployeeInfoActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.mazaiting.widget.view.IttView
+                android:id="@id/employee_info_itt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:content_itt="mazaiting"
+                app:pic_itt="@mipmap/ic_employee_info_name"
+                app:title_itt="姓名: "/>
+
+            <com.mazaiting.widget.view.IttView
+                android:id="@id/employee_info_itt_sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:pic_itt="@mipmap/ic_employee_info_sex"
+                app:content_itt="男"
+                app:title_itt="性别: "/>
+
+            <com.mazaiting.widget.view.IttView
+                android:id="@id/employee_info_itt_national"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:pic_itt="@mipmap/ic_employee_info_national"
+                app:content_itt="汉"
+                app:title_itt="族别: "/>
+
+            <com.mazaiting.widget.view.IttView
+                android:id="@id/employee_info_itt_id_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:content_itt="652328199411120813"
+                app:pic_itt="@mipmap/ic_employee_info_id_card"
+                app:title_itt="身份证: "/>
+
+            <com.mazaiting.widget.view.IttView
+                android:id="@id/employee_info_itt_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:content_itt="瓦工"
+                app:pic_itt="@mipmap/ic_employee_info_type"
+                app:title_itt="工种: "/>
+
+            <com.mazaiting.widget.view.IttView
+                android:id="@id/employee_info_itt_iris_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:pic_itt="@mipmap/ic_employee_info_iris_number"
+                app:content_itt="1号"
+                app:title_itt="虹膜机号: "/>
+
+            <com.mazaiting.widget.view.IttView
+                android:id="@id/employee_info_itt_helmet_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:content_itt="0x88"
+                app:pic_itt="@mipmap/ic_employee_info_helmet_number"
+                app:title_itt="头盔号: "/>
+
+            <com.mazaiting.widget.view.IttView
+                android:id="@id/employee_info_itt_label_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:content_itt="#1234"
+                app:pic_itt="@mipmap/ic_employee_info_label_number"
+                app:title_itt="标签号: "/>
+
+            <com.mazaiting.widget.view.IttView
+                android:id="@id/employee_info_itt_create_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:content_itt="2018年3月20日"
+                app:pic_itt="@mipmap/ic_employee_info_create_time"
+                app:title_itt="创建时间: "/>
+
+            <com.mazaiting.widget.view.IttView
+                android:id="@id/employee_info_itt_track"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:pic_itt="@mipmap/ic_employee_info_track"
+                app:content_itt="某楼/某层"
+                app:title_itt="人员轨迹: "/>
+
+            <ImageView
+                android:id="@id/employee_info_iv_display"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

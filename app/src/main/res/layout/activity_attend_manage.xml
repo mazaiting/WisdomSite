@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_attend_manage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".module.manage.attend.AttendManageActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <com.mazaiting.widget.view.ItiView
+        android:id="@id/attend_iti_day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:pic_iti="@mipmap/ic_attend_day"
+        app:txt_iti="当日考勤" />
+
+    <com.mazaiting.widget.view.ItiView
+        android:id="@id/attend_iti_month"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:pic_iti="@mipmap/ic_attend_month"
+        app:txt_iti="当月考勤" />
+
+    <com.mazaiting.widget.view.ItiView
+        android:id="@id/attend_iti_query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:pic_iti="@mipmap/ic_attend_query"
+        app:txt_iti="查询考勤" />
+
+</LinearLayout>

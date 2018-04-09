@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--WelcomeActivity-->
+    <item name="welcome_tv_time" type="id">false</item>
+    <!--LoginActivity-->
+    <item name="login_et_username" type="id">false</item>
+    <item name="login_et_password" type="id">false</item>
+    <item name="login_btn_login" type="id">false</item>
+    <item name="login_cb_auto_login" type="id">false</item>
+    <item name="login_cb_depart" type="id">false</item>
+    <!--item_site-->
+    <item name="item_tv_site_name" type="id">false</item>
+    <item name="item_tv_site_address" type="id">false</item>
+    <item name="item_tv_manager_name" type="id">false</item>
+    <!--UnitFragment-->
+    <item name="unit_iti_attend_manage" type="id">false</item>
+    <item name="unit_iti_record_manage" type="id">false</item>
+    <item name="unit_iti_equip_manage" type="id">false</item>
+    <item name="unit_iti_person_manage" type="id">false</item>
+    <!--AttendManageActivity-->
+    <item name="attend_iti_day" type="id">false</item>
+    <item name="attend_iti_month" type="id">false</item>
+    <item name="attend_iti_query" type="id">false</item>
+    <!--item_record-->
+    <item name="item_tv_label_id" type="id">false</item>
+    <item name="item_tv_equip_id" type="id">false</item>
+    <item name="item_tv_entry_time" type="id">false</item>
+    <!--item_equip-->
+    <item name="item_tv_equip_name" type="id">false</item>
+    <item name="item_tv_equip_number" type="id">false</item>
+    <item name="item_tv_equip_type" type="id">false</item>
+    <item name="item_tv_equip_use" type="id">false</item>
+    <!--EmployeeInfoActivity-->
+    <item name="employee_info_itt_name" type="id">false</item>
+    <item name="employee_info_itt_sex" type="id">false</item>
+    <item name="employee_info_itt_national" type="id">false</item>
+    <item name="employee_info_itt_id_card" type="id">false</item>
+    <item name="employee_info_itt_type" type="id">false</item>
+    <item name="employee_info_itt_iris_number" type="id">false</item>
+    <item name="employee_info_itt_helmet_number" type="id">false</item>
+    <item name="employee_info_itt_label_number" type="id">false</item>
+    <item name="employee_info_itt_create_time" type="id">false</item>
+    <item name="employee_info_itt_track" type="id">false</item>
+    <item name="employee_info_iv_display" type="id">false</item>
+    <!--item_employee_track-->
+    <item name="item_iv_head_img" type="id">false</item>
+    <item name="item_tv_build_floor" type="id">false</item>
+    <item name="item_tv_employee_name" type="id">false</item>
+    <item name="item_tv_employee_type" type="id">false</item>
+    <item name="item_tv_employee_sex" type="id">false</item>
+    <!--AttendDayActivity-->
+    <item name="pie_chart" type="id">false</item>
+    <item name="attend_day_tv_site_name" type="id">false</item>
+    <item name="attend_day_tv_time" type="id">false</item>
+    <item name="attend_day_tv_desc" type="id">false</item>
+    <item name="attend_day_frame_container" type="id">false</item>
+    <!--AttendMonthActivity-->
+    <item name="attend_month_tv_site_name" type="id">false</item>
+    <item name="attend_month_tv_time" type="id">false</item>
+    <item name="attend_month_tv_desc" type="id">false</item>
+    <item name="attend_month_frame_container" type="id">false</item>
+    <!--AttendQueryActivity-->
+    <item name="attend_query_tv_start_time" type="id">false</item>
+    <item name="attend_query_btn_start_time" type="id">false</item>
+    <item name="attend_query_tv_end_time" type="id">false</item>
+    <item name="attend_query_btn_end_time" type="id">false</item>
+    <item name="attend_query_tv_desc" type="id">false</item>
+    <item name="attend_query_frame_container" type="id">false</item>
+    <item name="attend_query_btn_search" type="id">false</item>
+</resources>

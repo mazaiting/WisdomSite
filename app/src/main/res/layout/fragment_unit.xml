@@ -1,0 +1,43 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mazaiting.site.module.main.unit.UnitFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <com.mazaiting.widget.view.ItiView
+            android:id="@id/unit_iti_attend_manage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:pic_iti="@mipmap/ic_attend"
+            app:txt_iti="考勤管理" />
+
+        <com.mazaiting.widget.view.ItiView
+            android:id="@id/unit_iti_record_manage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:txt_iti="记录管理" />
+
+        <com.mazaiting.widget.view.ItiView
+            android:id="@id/unit_iti_equip_manage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:pic_iti="@mipmap/ic_equip"
+            app:txt_iti="设备管理" />
+
+        <com.mazaiting.widget.view.ItiView
+            android:id="@id/unit_iti_person_manage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:pic_iti="@mipmap/ic_person"
+            app:txt_iti="人员管理" />
+    </LinearLayout>
+
+</FrameLayout>
