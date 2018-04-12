@@ -15,12 +15,12 @@ def releaseTime() {
 
 //def OUT_PUT_DIR_PARA = "G:\\setFragment"
 android {
-    compileSdkVersion 26
-    buildToolsVersion '27.0.3'
+    compileSdkVersion project.compileSdkVersion
+    buildToolsVersion project.buildToolsVersion
     defaultConfig {
         applicationId "com.mazaiting.site"
-        minSdkVersion 19
-        targetSdkVersion 26
+        minSdkVersion project.minSdkVersion
+        targetSdkVersion project.targetSdkVersion
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.setFragment.runner.AndroidJUnitRunner"

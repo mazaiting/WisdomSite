@@ -35,6 +35,14 @@ ext {
     // Release版本存放的路径
     out_put_file = "G:\\test"
     // 更换为对应的版本
-    supportVersion = "26.0.0-alpha1"
 //    supportVersion = "26.1.0"
+    supportVersion = "26.0.0-alpha1"
+    // 编译SDK版本
+    compileSdkVersion = 26
+    // 编译工具版本
+    buildToolsVersion = '27.0.3'
+    // 最小SDK版本
+    minSdkVersion = 19
+    // 目标SDK版本
+    targetSdkVersion = 26
 }

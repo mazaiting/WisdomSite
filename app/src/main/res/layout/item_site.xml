@@ -12,7 +12,7 @@
     >
 
     <RelativeLayout
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
@@ -36,7 +36,7 @@
             android:layout_below="@id/item_tv_site_name"
             android:layout_marginBottom="10dp"
             android:layout_marginStart="@dimen/dp_10"
-            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_4"
             android:text="工地地址1"
             android:textColor="@color/black_overlay"
             android:textSize="@dimen/sp_14" />
@@ -49,7 +49,7 @@
             android:layout_below="@id/item_tv_site_name"
             android:layout_marginBottom="10dp"
             android:layout_marginEnd="@dimen/dp_10"
-            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_4"
             android:text="工地管理人"
             android:textColor="@color/black_overlay"
             android:textSize="@dimen/sp_14" />

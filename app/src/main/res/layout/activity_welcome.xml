@@ -3,25 +3,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/ic_welcome"
+    android:background="@android:color/white"
     tools:context="com.mazaiting.site.module.welcome.WelcomeActivity">
 
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="top|center"
-        android:keepScreenOn="true"
-        android:layout_marginTop="30dp"
-        android:text="@string/welcome_content"
-        android:textColor="#33b5e5"
-        android:textSize="40sp"
-        android:textStyle="bold"/>
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="-80dp"
+        android:background="@mipmap/ic_welcome"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top|center"
+            android:keepScreenOn="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/welcome_content"
+            android:textColor="#33b5e5"
+            android:textSize="30sp"
+            android:textStyle="normal"
+            />
+    </RelativeLayout>
 
     <TextView
         android:id="@id/welcome_tv_time"
         android:layout_gravity="end"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
         android:textSize="@dimen/sp_12"
         android:clickable="true"
         android:focusable="true"

@@ -23,6 +23,8 @@ public class Config extends BaseConfig{
     public static final String PASS_WORD = "pass_word";
     /**对话框Tag*/
     public static final String DIALOG_LOADING = "dialog_loading";
+    /**无网络对话框tag*/
+    public static final String DIALOG_PN = "dialog_pn";
     /**网络类型存储*/
     public static final String TYPE_NET = "type_net";
     /**储存用户ID*/
@@ -39,6 +41,7 @@ public class Config extends BaseConfig{
     public static final String ATTEND_FULL_NUMBER = "attend_full_number";
     /**缺勤天数*/
     public static final String ATTEND_NOT_FULL_NUMBER = "attend_not_full_number";
+
 
     /**
      * 是否处于调试阶段

@@ -1,7 +1,7 @@
 package com.mazaiting.site.module.login;
 
 import android.content.Intent;
-import android.os.Bundle;
+import android.provider.Settings;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.CheckBox;
@@ -9,13 +9,12 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.mazaiting.easy.app.ApplicationComponent;
-import com.mazaiting.easy.base.activity.BaseActivity;
 import com.mazaiting.site.R;
 import com.mazaiting.site.base.activity.BaseLoadingActivity;
 import com.mazaiting.site.base.component.ApplicationComponentImpl;
 import com.mazaiting.site.base.config.Config;
 import com.mazaiting.site.module.main.MainActivity;
-import com.mazaiting.widget.fragment.LoadingDialogFragment;
+import com.mazaiting.widget.fragment.PnDialogFragment;
 import com.orhanobut.logger.Logger;
 
 import butterknife.BindView;
@@ -74,30 +73,7 @@ public class LoginActivity extends BaseLoadingActivity<LoginPresenter> implement
         mEtPassword.setText(mPassWord);
         mCbAutoLogin.setChecked(isAutoLogin);
         mCbDepart.setChecked(mIsDepart);
-    }
-
-    @Override
-    public void onShowSuccess() {
-        super.onShowSuccess();
-        // 检测是否保存用户名
-        boolean isAutoLogin = mCbAutoLogin.isChecked();
-        // 如果为true，则保存用户名和密码
-        if (isAutoLogin) {
-            mPresenter.saveUserNameAndPassWord(mUserName, mPassWord);
-            mPresenter.saveAutoLogin(true);
-        }
-
-        // 检测是否是监管部门
-        boolean isDepart = mCbDepart.isChecked();
-        // 判断是否为监管部门
-        if (isDepart) {
-            mPresenter.saveDepart(true);
-        }
-        // 开启主页面
-        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-        intent.putExtra(Config.LOGIN_IS_DEPART, isDepart);
-        startActivity(intent);
-        finish();
+        mEtUsername.setSelection(mUserName.length());
     }
 
     @Override
@@ -141,4 +117,31 @@ public class LoginActivity extends BaseLoadingActivity<LoginPresenter> implement
         mPresenter.login(mUserName, mPassWord, (mIsDepart ? 1 : 0));
     }
 
+    @Override
+    public void update() {
+        // 检测是否保存用户名
+        boolean isAutoLogin = mCbAutoLogin.isChecked();
+        // 如果为true，则保存用户名和密码
+        if (isAutoLogin) {
+            mPresenter.saveUserNameAndPassWord(mUserName, mPassWord);
+            mPresenter.saveAutoLogin(true);
+        }
+
+        // 检测是否是监管部门
+        boolean isDepart = mCbDepart.isChecked();
+        // 判断是否为监管部门
+        if (isDepart) {
+            mPresenter.saveDepart(true);
+        }
+        // 开启主页面
+        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+        intent.putExtra(Config.LOGIN_IS_DEPART, isDepart);
+        startActivity(intent);
+        finish();
+    }
+
+    @Override
+    public void onShowNoNet() {
+        super.onShowNoNet();
+    }
 }

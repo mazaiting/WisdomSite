@@ -1,12 +1,12 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion "26.0.3"
+    compileSdkVersion project.compileSdkVersion
+    buildToolsVersion project.buildToolsVersion
 
     defaultConfig {
-        minSdkVersion 19
-        targetSdkVersion 26
+        minSdkVersion project.minSdkVersion
+        targetSdkVersion project.targetSdkVersion
         versionCode 1
         versionName "1.0"
 
@@ -22,11 +22,6 @@ android {
         }
     }
 }
-
-//project.ext {
-//    // 更换为对应的版本
-//    supportVersion = "26.0.0-alpha1"
-//}
 
 dependencies {
     compile 'com.jakewharton:butterknife:8.8.1'
@@ -77,6 +72,6 @@ dependencies {
     // 持久化CookieJar
     compile 'com.github.franmontiel:PersistentCookieJar:v1.0.1'
     // RxLifecycle2 解决内存泄漏
-    compile 'com.trello.rxlifecycle2:rxlifecycle:2.0.1'
-    compile 'com.trello.rxlifecycle2:rxlifecycle-components:2.0.1'
+    compile 'com.trello.rxlifecycle2:rxlifecycle:2.1.0'
+    compile 'com.trello.rxlifecycle2:rxlifecycle-components:2.1.0'
 }

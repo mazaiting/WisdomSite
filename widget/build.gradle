@@ -1,12 +1,12 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion "26.0.3"
+    compileSdkVersion project.compileSdkVersion
+    buildToolsVersion project.buildToolsVersion
 
     defaultConfig {
-        minSdkVersion 19
-        targetSdkVersion 26
+        minSdkVersion project.minSdkVersion
+        targetSdkVersion project.targetSdkVersion
         versionCode 1
         versionName "1.0"
 
@@ -22,8 +22,9 @@ android {
 }
 
 dependencies {
-    compile "com.android.support:appcompat-v7:$supportVersion"
+    compile "com.android.support:appcompat-v7:${project.supportVersion}"
     // Lottie动画
     compile 'com.airbnb.android:lottie:2.1.0'    // 加载动画支持
+    // 进度条
     compile 'com.wang.avi:library:2.1.3'
 }

@@ -77,6 +77,7 @@ public class WelcomeActivity extends BaseActivity<LoginPresenter> implements Log
 
         if (isLoginSuccess) {
             onShowSuccess();
+            update();
         } else {
             onShowFailed("");
         }
@@ -115,13 +116,6 @@ public class WelcomeActivity extends BaseActivity<LoginPresenter> implements Log
     @Override
     public void onShowSuccess() {
         isLoginSuccess = true;
-        if (!isCountTimer) {
-            // 开启主页面
-            Intent intent = new Intent(WelcomeActivity.this, MainActivity.class);
-            intent.putExtra(Config.LOGIN_IS_DEPART, mIsDepart);
-            startActivity(intent);
-            finish();
-        }
     }
 
     @Override
@@ -172,5 +166,16 @@ public class WelcomeActivity extends BaseActivity<LoginPresenter> implements Log
     @Override
     public void initData() {
         autoLogin();
+    }
+
+    @Override
+    public void update() {
+        if (!isCountTimer) {
+            // 开启主页面
+            Intent intent = new Intent(WelcomeActivity.this, MainActivity.class);
+            intent.putExtra(Config.LOGIN_IS_DEPART, mIsDepart);
+            startActivity(intent);
+            finish();
+        }
     }
 }

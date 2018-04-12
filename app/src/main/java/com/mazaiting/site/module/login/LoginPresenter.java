@@ -50,6 +50,7 @@ public class LoginPresenter extends BaseNetPresenter<LoginContract.View> impleme
                                 saveUserId(userBean.getUserId());
                                 saveSiteId(userBean.getSiteId());
                                 mView.onShowSuccess();
+                                mView.update();
                             } else {
                                 mView.onShowFailed(userBean.getMsg());
                             }

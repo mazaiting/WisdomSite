@@ -13,7 +13,10 @@ import com.mazaiting.easy.base.mvp.IBaseView;
 public interface LoginContract {
 
     interface View extends IBaseView {
-
+        /**
+         * 登陆成功
+         */
+        void update();
     }
 
     interface Presenter extends IBasePresenter<View> {
