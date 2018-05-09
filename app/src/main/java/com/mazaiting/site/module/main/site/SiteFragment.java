@@ -122,9 +122,12 @@ public class SiteFragment extends BaseLazyFragment<SitePresenter> implements Sit
      * 关闭加载对话框
      */
     private void closeLoadingDialog() {
-        if (mLoadingDialogFragment.isVisible()) {
-            mLoadingDialogFragment.dismiss();
-        }
+        // 可用
+//        if (mLoadingDialogFragment.isCancelable()) {
+//            mLoadingDialogFragment.dismiss();
+//        }
+        // 可用，如果不可用，可使用上面的方式
+        mLoadingDialogFragment.dismissAllowingStateLoss();
     }
 
     @Override
